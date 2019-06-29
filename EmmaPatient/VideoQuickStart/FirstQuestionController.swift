@@ -18,8 +18,14 @@ class FirstQuestionController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        let Tap:UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(DismissKeyboard))
+        
+        view.addGestureRecognizer(Tap)
         // Do any additional setup after loading the view.
+    }
+    
+    @objc func DismissKeyboard(){
+        view.endEditing(true)
     }
 }
 
