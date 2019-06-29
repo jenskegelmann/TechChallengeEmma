@@ -11,6 +11,7 @@ import UIKit
 class FirstViewController: UIViewController {
     
     @IBOutlet weak var round_button: UIButton!
+    @IBOutlet weak var round_emergency_button: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,12 +19,21 @@ class FirstViewController: UIViewController {
         
         round_button.layer.cornerRadius=10.0
         round_button.layer.masksToBounds=true
+        round_emergency_button.layer.cornerRadius=10.0
+        round_emergency_button.layer.masksToBounds=true
+        
+        
     }
 
     @IBAction func logout(_ sender: Any) {
         
         dismiss(animated: true, completion: nil)
         
+    }
+    
+    @IBAction func emergency(_ sender: Any) {
+        
+        tabBarController?.selectedIndex = 1
     }
     
 }
