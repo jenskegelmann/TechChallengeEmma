@@ -9,10 +9,15 @@
 import UIKit
 
 class FirstViewController: UIViewController {
-
+    
+    @IBOutlet weak var round_button: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        round_button.layer.cornerRadius=10.0
+        round_button.layer.masksToBounds=true
     }
 
     @IBAction func logout(_ sender: Any) {

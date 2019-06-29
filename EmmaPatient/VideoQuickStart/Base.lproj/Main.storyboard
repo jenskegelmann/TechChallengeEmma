@@ -230,19 +230,58 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="drK-W8-CKf">
-                                <rect key="frame" x="150" y="426" width="114" height="44"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <state key="normal" title="Next Slide"/>
-                                <connections>
-                                    <segue destination="S3t-EI-obB" kind="show" id="2II-Tv-XjZ"/>
-                                </connections>
-                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fse-x4-yGj">
+                                <rect key="frame" x="0.0" y="661" width="414" height="152"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sT6-NG-OmT">
+                                        <rect key="frame" x="20" y="22" width="375" height="111"/>
+                                        <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Lebensbedrohlicher Notfall"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.96376432249999999" green="0.96376432249999999" blue="0.96376432249999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="sT6-NG-OmT" firstAttribute="centerX" secondItem="Fse-x4-yGj" secondAttribute="centerX" id="EwS-1y-Jbb"/>
+                                    <constraint firstItem="sT6-NG-OmT" firstAttribute="top" secondItem="Fse-x4-yGj" secondAttribute="top" constant="22" id="QRt-5A-DHH"/>
+                                    <constraint firstItem="sT6-NG-OmT" firstAttribute="centerY" secondItem="Fse-x4-yGj" secondAttribute="centerY" constant="1" id="fTT-Hc-5I7"/>
+                                    <constraint firstItem="sT6-NG-OmT" firstAttribute="leading" secondItem="Fse-x4-yGj" secondAttribute="leading" constant="20" id="ob5-r5-R4I"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S3R-cL-hNO">
+                                <rect key="frame" x="0.0" y="501" width="414" height="152"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="drK-W8-CKf">
+                                        <rect key="frame" x="20" y="22" width="375" height="111"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Empfehlung für eine Behandlung"/>
+                                        <connections>
+                                            <segue destination="S3t-EI-obB" kind="show" id="2II-Tv-XjZ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.96376432254524425" green="0.96376432254524425" blue="0.96376432254524425" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="drK-W8-CKf" firstAttribute="centerX" secondItem="S3R-cL-hNO" secondAttribute="centerX" id="04h-hm-E6T"/>
+                                    <constraint firstItem="drK-W8-CKf" firstAttribute="centerY" secondItem="S3R-cL-hNO" secondAttribute="centerY" constant="1.5" id="BtY-Vf-t8j"/>
+                                    <constraint firstItem="drK-W8-CKf" firstAttribute="top" secondItem="S3R-cL-hNO" secondAttribute="top" constant="22" id="olc-ek-duD"/>
+                                    <constraint firstItem="drK-W8-CKf" firstAttribute="leading" secondItem="S3R-cL-hNO" secondAttribute="leading" constant="20" id="xQI-Eh-yqK"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="drK-W8-CKf" firstAttribute="centerX" secondItem="Vku-1w-lgc" secondAttribute="centerX" id="Zvw-fQ-9SJ"/>
-                            <constraint firstItem="drK-W8-CKf" firstAttribute="centerY" secondItem="Vku-1w-lgc" secondAttribute="centerY" id="nc5-Hh-CKD"/>
+                            <constraint firstItem="Fse-x4-yGj" firstAttribute="top" secondItem="S3R-cL-hNO" secondAttribute="bottom" constant="8" symbolic="YES" id="D2x-WD-gue"/>
+                            <constraint firstItem="Bch-6f-qMO" firstAttribute="bottom" secondItem="S3R-cL-hNO" secondAttribute="bottom" constant="160" id="Kvw-Hh-8GG"/>
+                            <constraint firstItem="S3R-cL-hNO" firstAttribute="leading" secondItem="Vku-1w-lgc" secondAttribute="leading" id="XJH-r8-RgJ"/>
+                            <constraint firstItem="Fse-x4-yGj" firstAttribute="leading" secondItem="S3R-cL-hNO" secondAttribute="leading" id="bD1-Dn-37f"/>
+                            <constraint firstItem="S3R-cL-hNO" firstAttribute="top" secondItem="Bch-6f-qMO" secondAttribute="top" constant="413" id="fe1-NL-LOr"/>
+                            <constraint firstItem="Fse-x4-yGj" firstAttribute="bottom" secondItem="Bch-6f-qMO" secondAttribute="bottom" id="hgv-jk-dcw"/>
+                            <constraint firstItem="Fse-x4-yGj" firstAttribute="trailing" secondItem="S3R-cL-hNO" secondAttribute="trailing" id="iR8-N6-SPO"/>
+                            <constraint firstItem="S3R-cL-hNO" firstAttribute="centerX" secondItem="Vku-1w-lgc" secondAttribute="centerX" id="mcG-cm-wbb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Bch-6f-qMO"/>
                     </view>
@@ -254,10 +293,13 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="round_button" destination="drK-W8-CKf" id="vti-jF-OHg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xkb-Ph-jLI" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-241" y="367"/>
+            <point key="canvasLocation" x="-242.0289855072464" y="366.96428571428572"/>
         </scene>
         <!--Start Call View Controller-->
         <scene sceneID="YaQ-x1-Ptl">
