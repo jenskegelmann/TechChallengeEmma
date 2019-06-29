@@ -222,7 +222,7 @@
             </objects>
             <point key="canvasLocation" x="-946" y="367"/>
         </scene>
-        <!--First View Controller-->
+        <!--emma Telemedizin-->
         <scene sceneID="OBa-Sh-2dm">
             <objects>
                 <viewController storyboardIdentifier="FirstViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="bBR-WL-STu" customClass="FirstViewController" customModule="Emma" customModuleProvider="target" sceneMemberID="viewController">
@@ -246,7 +246,8 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Bch-6f-qMO"/>
                     </view>
-                    <navigationItem key="navigationItem" id="zJr-1A-1ra">
+                    <navigationItem key="navigationItem" title="emma Telemedizin" id="zJr-1A-1ra">
+                        <barButtonItem key="backBarButtonItem" title="Zurück" id="7H7-af-xL3"/>
                         <barButtonItem key="rightBarButtonItem" title="Logout" id="eUa-yc-4fh">
                             <connections>
                                 <action selector="logout:" destination="bBR-WL-STu" id="KBj-c7-jPS"/>
@@ -339,7 +340,7 @@
             </objects>
             <point key="canvasLocation" x="-946" y="1075"/>
         </scene>
-        <!--Account-->
+        <!--Account Einstellungen-->
         <scene sceneID="r10-Um-jl6">
             <objects>
                 <viewController id="NaO-fd-aKa" customClass="ThirdViewController" customModule="emma" sceneMemberID="viewController">
@@ -350,7 +351,7 @@
                         <viewLayoutGuide key="safeArea" id="7pv-uM-K8r"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Account" image="third" id="cYO-aR-ufw"/>
-                    <navigationItem key="navigationItem" id="gJo-0t-tEB">
+                    <navigationItem key="navigationItem" title="Account Einstellungen" id="gJo-0t-tEB">
                         <barButtonItem key="rightBarButtonItem" title="Logout" id="JnB-tC-CjO">
                             <connections>
                                 <action selector="logout:" destination="bBR-WL-STu" id="gtN-Bu-51J"/>
