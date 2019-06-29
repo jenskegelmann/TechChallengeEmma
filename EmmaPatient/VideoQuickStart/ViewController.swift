@@ -180,9 +180,9 @@ class ViewController: UIViewController {
             
             // Update the button title
             if (self.localAudioTrack?.isEnabled == true) {
-                self.micButton.setTitle("Mute", for: .normal)
+                self.micButton.setTitle("Stumm", for: .normal)
             } else {
-                self.micButton.setTitle("Unmute", for: .normal)
+                self.micButton.setTitle("/Stumm", for: .normal)
             }
         }
     }

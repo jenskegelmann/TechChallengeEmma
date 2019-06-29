@@ -3,7 +3,6 @@
 //  emma
 //
 //  Created by Jens Kegelmann on 28.06.19.
-//  Copyright © 2019 Jens Kegelmann. All rights reserved.
 //
 
 import Foundation
