@@ -30,6 +30,9 @@ class SecondQuestionContoller: UIViewController, UIPickerViewDataSource, UIPicke
         super.viewDidLoad()
         round_button_next.layer.cornerRadius=10.0
         round_button_next.layer.masksToBounds=true
+        
+        self.title = "Schritt 2/2"
+
         // Do any additional setup after loading the view.
     }
 

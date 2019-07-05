@@ -11,6 +11,7 @@ class FirstQuestionController: UIViewController {
 
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tblView: UITableView!
+    @IBOutlet weak var round_button_next2: UIButton!
     
     let symptomeArr = ["Bauchschmerzen", "Ausschlag", "Fieber", "Hoher Blutdruck"]
     var searchSymptome = [String]()
@@ -21,6 +22,10 @@ class FirstQuestionController: UIViewController {
         let Tap:UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(DismissKeyboard))
         
         view.addGestureRecognizer(Tap)
+        
+        round_button_next2.layer.cornerRadius=10.0
+        round_button_next2.layer.masksToBounds=true
+        
         // Do any additional setup after loading the view.
     }
     
@@ -47,6 +52,10 @@ extension FirstQuestionController: UITableViewDataSource, UITableViewDelegate {
             cell?.textLabel?.text = symptomeArr[indexPath.row]
         }
         return cell!
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "secondQuestion", sender: self)
     }
 }
 
