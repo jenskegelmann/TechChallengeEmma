@@ -23,12 +23,6 @@ class FirstViewController: UIViewController {
         
         
     }
-
-    @IBAction func logout(_ sender: Any) {
-        
-        dismiss(animated: true, completion: nil)
-        
-    }
     
     @IBAction func emergency(_ sender: Any) {
         

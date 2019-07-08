@@ -11,9 +11,8 @@ class FirstQuestionController: UIViewController {
 
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tblView: UITableView!
-    @IBOutlet weak var round_button_next2: UIButton!
     
-    let symptomeArr = ["Bauchschmerzen", "Ausschlag", "Fieber", "Hoher Blutdruck"]
+    let symptomeArr = ["Allgemeine Schwäche","Atembeschwerden","Ausschlag","Bauchschmerzen","Blut im Stuhl","Blutung an Extremitäten","Brustschmerz","Fieber","Gelenksschmerzen","Herzrasen","Insektenstich","Kopfschmerzen","Kreuzschmerzen","Nackenschmerzen","Rötung","Schwellung am Fuß","Schwindel","Starke Übelkeit"]
     var searchSymptome = [String]()
     var searching = false
     
@@ -22,10 +21,7 @@ class FirstQuestionController: UIViewController {
         let Tap:UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(DismissKeyboard))
         
         view.addGestureRecognizer(Tap)
-        
-        round_button_next2.layer.cornerRadius=10.0
-        round_button_next2.layer.masksToBounds=true
-        
+
         // Do any additional setup after loading the view.
     }
     

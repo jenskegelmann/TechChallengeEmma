@@ -20,10 +20,13 @@
 		4BAA74EB1D8B5CBE00239F19 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAA74EA1D8B5CBE00239F19 /* Utils.swift */; };
 		613526BB22C7781600E1B792 /* SecondQuestionContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613526BA22C7781600E1B792 /* SecondQuestionContoller.swift */; };
 		613526BD22C7ABC600E1B792 /* FirstQuestionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613526BC22C7ABC600E1B792 /* FirstQuestionController.swift */; };
+		614FE80622D257AF007A4449 /* EmergencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614FE80522D257AF007A4449 /* EmergencyViewController.swift */; };
+		614FE80822D257C2007A4449 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614FE80722D257C2007A4449 /* AccountViewController.swift */; };
 		6159FB7D22BE8C9B00735868 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6159FB7C22BE8C9A00735868 /* Assets.xcassets */; };
 		6197355122C61AC400772DAE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6197354F22C61AC300772DAE /* LoginViewController.swift */; };
 		6197355222C61AC400772DAE /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6197355022C61AC400772DAE /* FirstViewController.swift */; };
 		6197355422C61B5F00772DAE /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6197355322C61B5F00772DAE /* MainTabController.swift */; };
+		61DC961E22CFAB1000582A08 /* ZusammenfassungViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DC961D22CFAB1000582A08 /* ZusammenfassungViewController.swift */; };
 		85B86D6754F068C32E545EC3 /* libPods-TwilioVideo-VideoQuickStart.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A7669A9CD8D101ED795BBF0 /* libPods-TwilioVideo-VideoQuickStart.a */; };
 		8B79D46A1C2252A100489AA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B79D4691C2252A100489AA5 /* AppDelegate.swift */; };
 		8B79D46C1C2252A100489AA5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B79D46B1C2252A100489AA5 /* ViewController.swift */; };
@@ -61,10 +64,13 @@
 		4BAA74EA1D8B5CBE00239F19 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		613526BA22C7781600E1B792 /* SecondQuestionContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondQuestionContoller.swift; sourceTree = "<group>"; };
 		613526BC22C7ABC600E1B792 /* FirstQuestionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstQuestionController.swift; sourceTree = "<group>"; };
+		614FE80522D257AF007A4449 /* EmergencyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyViewController.swift; sourceTree = "<group>"; };
+		614FE80722D257C2007A4449 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		6159FB7C22BE8C9A00735868 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6197354F22C61AC300772DAE /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		6197355022C61AC400772DAE /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		6197355322C61B5F00772DAE /* MainTabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
+		61DC961D22CFAB1000582A08 /* ZusammenfassungViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZusammenfassungViewController.swift; sourceTree = "<group>"; };
 		8B79D4661C2252A100489AA5 /* Emma.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Emma.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B79D4691C2252A100489AA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B79D46B1C2252A100489AA5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -172,6 +178,9 @@
 		8B99217A1C230E7800DC3BCA /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				614FE80522D257AF007A4449 /* EmergencyViewController.swift */,
+				614FE80722D257C2007A4449 /* AccountViewController.swift */,
+				61DC961D22CFAB1000582A08 /* ZusammenfassungViewController.swift */,
 				613526BC22C7ABC600E1B792 /* FirstQuestionController.swift */,
 				613526BA22C7781600E1B792 /* SecondQuestionContoller.swift */,
 				6197355022C61AC400772DAE /* FirstViewController.swift */,
@@ -309,7 +318,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61DC961E22CFAB1000582A08 /* ZusammenfassungViewController.swift in Sources */,
 				6197355122C61AC400772DAE /* LoginViewController.swift in Sources */,
+				614FE80822D257C2007A4449 /* AccountViewController.swift in Sources */,
+				614FE80622D257AF007A4449 /* EmergencyViewController.swift in Sources */,
 				613526BB22C7781600E1B792 /* SecondQuestionContoller.swift in Sources */,
 				613526BD22C7ABC600E1B792 /* FirstQuestionController.swift in Sources */,
 				4B63DD331F73032D00F0737E /* SettingsTableViewController.swift in Sources */,
