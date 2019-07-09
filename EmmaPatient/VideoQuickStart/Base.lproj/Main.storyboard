@@ -159,8 +159,8 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Klinikum Rechts der Isar" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PM0-T1-TtI">
-                                        <rect key="frame" x="114.5" y="42" width="189" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hausarzt" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PM0-T1-TtI">
+                                        <rect key="frame" x="173.5" y="42" width="71" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="GNx-ws-uch"/>
                                         </constraints>
@@ -188,7 +188,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Innerhalb der nächsten 4 Stunden" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x09-Zg-7PS">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Innerhalb der nächsten 2 Tage" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x09-Zg-7PS">
                                         <rect key="frame" x="74" y="42" width="270" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="C46-yN-tzr"/>
@@ -1038,6 +1038,6 @@
         <image name="third" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="7kf-dC-ErT"/>
+        <segue reference="Mug-VY-LHQ"/>
     </inferredMetricsTieBreakers>
 </document>
